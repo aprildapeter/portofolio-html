@@ -22,6 +22,7 @@
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  --card-color : #fff;
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -81,6 +82,7 @@ body.dark-theme {
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+  --card-color : #979797;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -578,6 +580,11 @@ img {
   transform: rotate(-180deg);
 }
 
+.card{
+  background: var(--card-color);
+  color: var(--title-color);
+}
+
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs {
   display: flex;
@@ -971,7 +978,7 @@ img {
 .footer__copy {
   font-size: var(--smaller-font-size);
   text-align: center;
-  color: var(--text-color-light);
+  color: var(--title-color);
   margin-top: var(--mb-3);
 }
 
